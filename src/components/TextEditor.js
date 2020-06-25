@@ -153,7 +153,7 @@ export default class TextEditor extends Component {
 
 		const { value } = this.state;
 		const hasLinks = this.hasLinks();
-		const change = value.change();
+    const change = value.change();
 
 		if (hasLinks) {
 			change.call(this.unwrapLink);
